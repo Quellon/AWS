@@ -27,8 +27,7 @@ exports.handler = async (event) => {
       return {
         statusCode: 400,
         headers: {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*'
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({
           error: 'Missing required fields: severity and message are required'
@@ -42,8 +41,7 @@ exports.handler = async (event) => {
       return {
         statusCode: 400,
         headers: {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*'
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({
           error: `Invalid severity. Must be one of: ${validSeverities.join(', ')}`
@@ -72,8 +70,7 @@ exports.handler = async (event) => {
     return {
       statusCode: 201,
       headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({
         success: true,
@@ -88,8 +85,7 @@ exports.handler = async (event) => {
     return {
       statusCode: 500,
       headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({
         error: 'Internal server error',
