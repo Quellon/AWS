@@ -3,7 +3,6 @@ data "archive_file" "ingest_lambda_package" {
   type        = "zip"
   source_dir  = "${path.module}/../../lambdas/ingest"
   output_path = "${path.module}/../../lambdas/ingest.zip"
-  excludes    = ["node_modules", "package-lock.json"]
 }
 
 # Package ReadRecent Lambda
@@ -11,7 +10,6 @@ data "archive_file" "read_recent_lambda_package" {
   type        = "zip"
   source_dir  = "${path.module}/../../lambdas/read-recent"
   output_path = "${path.module}/../../lambdas/read-recent.zip"
-  excludes    = ["node_modules", "package-lock.json"]
 }
 
 # Ingest Lambda Function
