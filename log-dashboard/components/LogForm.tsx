@@ -40,7 +40,7 @@ export default function LogForm({ onSuccess }: LogFormProps) {
   return (
     <div className="bg-white rounded-lg shadow-lg p-6">
       <h2 className="text-2xl font-bold mb-6 text-gray-800 border-b-2 border-purple-500 pb-2">
-        📝 Submit Log
+        Submit Log
       </h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>

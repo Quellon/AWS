@@ -26,7 +26,7 @@ export default function LogList({ logs }: LogListProps) {
     <div className="bg-white rounded-lg shadow-lg p-6">
       <div className="flex items-center justify-between mb-6 flex-wrap gap-4">
         <h2 className="text-2xl font-bold text-gray-800">
-          📋 Recent Logs
+          Recent Logs
           <span className="text-sm text-gray-500 ml-2">({filteredLogs.length} of {logs.length})</span>
         </h2>
 

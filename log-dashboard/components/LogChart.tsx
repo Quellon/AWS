@@ -43,7 +43,7 @@ export default function LogChart({ logs }: LogChartProps) {
   return (
     <div className="bg-white rounded-lg shadow-lg p-6">
       <h2 className="text-2xl font-bold mb-6 text-gray-800 border-b-2 border-purple-500 pb-2">
-        📊 Log Analytics
+         Log Analytics
       </h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

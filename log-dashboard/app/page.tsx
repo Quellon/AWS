@@ -77,7 +77,7 @@ export default function Dashboard() {
           <div className="flex items-center justify-between flex-wrap gap-4">
             <div>
               <h1 className="text-4xl font-bold text-gray-800 mb-2">
-                🚀 AWS Log Service Dashboard
+                 AWS Log Service Dashboard
               </h1>
               <p className="text-gray-600">
                 Real-time serverless logging system powered by AWS Lambda & DynamoDB
@@ -98,13 +98,13 @@ export default function Dashboard() {
                     : 'bg-gray-100 text-gray-700 border-2 border-gray-300'
                 }`}
               >
-                {autoRefresh ? '🔄 Auto-refresh ON' : '⏸️ Auto-refresh OFF'}
+                {autoRefresh ? ' Auto-refresh ON' : ' Auto-refresh OFF'}
               </button>
               <button
                 onClick={loadLogs}
                 className="px-4 py-2 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition transform hover:scale-105 active:scale-95"
               >
-                🔃 Refresh Now
+                 Refresh Now
               </button>
             </div>
           </div>
@@ -168,7 +168,7 @@ export default function Dashboard() {
               <strong>Backend:</strong> AWS Lambda (Node.js) • DynamoDB • Terraform
             </p>
             <p className="text-sm">
-              Built with ❤️ using serverless architecture | Auto-refreshes every 5 seconds
+              Built with using serverless architecture | Auto-refreshes every 5 seconds
             </p>
           </div>
         </footer>
